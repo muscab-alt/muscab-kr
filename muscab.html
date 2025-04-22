@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-ka Muscab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007BFF, #00B0FF);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            display: inline-block;
+            padding: 14px 30px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.03);
+        }
+
+        h2 {
+            color: #007BFF;
+            font-size: 28px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #007BFF;
+            margin: 20px 0;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project {
+            width: 30%;
+            margin: 15px 0;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #333;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .skills-list div {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-links a {
+            color: #007BFF;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        #plans .project ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        #plans .project ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .plan-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .plan-button.free {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .plan-button.trial {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .plan-button.premium {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .plan-button:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<!-- Preloader -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+
+<body>
+    <header>
+        <h1>Ku Soo Dhawoow Website-ka Muscab Karaama</h1>
+    </header>
+
+
+
+    <nav>
+        <a href="#about">Macluumaadkayga</a>
+        <a href="#skills">Xirfadaha</a>
+        <a href="#projects">Mashaariicda</a>
+        <a href="#plans">Qorshayaasha</a>
+        <a href="#contact">Xiriir</a>
+    </nav>
+<ul class="timeline">
+  <li><strong>2023:</strong> wax barasho</li>
+  <li><strong>2024:</strong> Programming bartay</li>
+  <li><strong>2025:</strong> Waxaa Bilaabay website-kan</li>
+</ul>
+
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("preloader").style.display = "none";
+  });
+</script>
+
+
+<style>
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex; justify-content: center; align-items: center;
+}
+.modal-content {
+  background: white; padding: 30px; border-radius: 10px;
+  text-align: center;
+}
+</style>
+
+<div class="modal" id="welcomeModal">
+  <div class="modal-content">
+    <h2>Welcome </h2>
+    <p>Thanks for visiting my personal website 👋</p>
+    <button onclick="document.getElementById('welcomeModal').style.display='none'">Soo Gal</button>
+  </div>
+</div>
+
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">⬆️</button>
+
+<style>
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+</style>
+
+<script>
+let scrollBtn = document.getElementById("scrollBtn");
+
+window.onscroll = function() {
+  scrollBtn.style.display = window.scrollY > 100 ? "block" : "none";
+};
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+    <section id="about">
+        <h2>Macluumaadkayga</h2>
+        <img src="your-photo.jpg" alt="	" class="profile-image">
+        <p>Magacaygu waa Muscab, waxaan ahay qof xiiseynaya barashada iyo wadaagista aqoonta. Ku soo dhawoow website-kayga shaqsiga ah, halkaasoo aan ku soo bandhigo mashaariicda, xirfadaha, iyo wixii kale ee aan qabto.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Xirfadaha aan leeyahay</h2>
+        <div class="skills-list">
+            <div>Graphic Design</div>
+            <div>Web Development</div>
+            <div>Networking</div>
+            <div>Programming</div>
+            <div>SEO & Digital Marketing</div>
+            <div>Project Management</div>
+        </div>
+    </section>
+    <h3>Skills</h3>
+<div>
+  <p>Networking</p>
+  <div style="background: #ddd; border-radius: 20px;">
+    <div style="width: 90%; background: #4caf50; padding: 8px; color: white; border-radius: 20px;">90%</div>
+  </div>
+  <div>
+  <p>Graphic Design</p>
+  <div style="background: #ddd; border-radius: 20px;">
+    <div style="width: 90%; background: #4caf50; padding: 8px; color: white; border-radius: 20px;">90%</div>
+  </div>
+  <p>HTML/CSS</p>
+  <div style="background: #ddd; border-radius: 20px;">
+    <div style="width: 100%; background: #2196F3; padding: 8px; color: white; border-radius: 20px;">100%</div>
+  </div>
+</div>
+
+
+    <section id="graphic-design">
+    <h2>Graphic Design Bootcamp</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Session 1: Muqaalka Guud ee Graphic Design</h3>
+            <p>✔️ Multimedia iyo isticmaalkeeda (Text, Graphics, Audio, Video, Animation)</p>
+            <p>✔️ Shaqooyinka naqshadeeyaha: UI Design, Brand Identity, Advertising</p>
+            <p>✔️ 8 nooc oo naqshadeyn ah: Visual Identity, UI, Packaging, Motion Graphics, iwm</p>
+            <p>✔️ Qalabka muhiimka ah: PC, Software (Ps, Ai), qalab wax lagu sawiro</p>
+        </div>
+
+        <div class="project">
+            <h3>Session 2: Photoshop & Qalabkiisa</h3>
+            <p>✔️ Photoshop CC: Taariikh & Isticmaal</p>
+            <p>✔️ Workspace-ka: Toolbar, Menu bar, Palettes</p>
+            <p>✔️ Document setup: Bleed, Resolution, Color Modes (RGB/CMYK)</p>
+            <p>✔️ File types: PSD, PNG, JPG — iyo ujeedkooda kala duwan</p>
+        </div>
+
+        <div class="project">
+            <h3>Session 3: Waxyaabaha Cusub ee Photoshop</h3>
+            <p>✔️ Cloud Documents – Shaqo iswaafaqsan iPad & Desktop</p>
+            <p>✔️ Presets & Templates cusub oo laga heli karo Adobe Stock</p>
+            <p>✔️ Object Selection Tool cusub & Warp Tool horumarsan</p>
+            <p>✔️ Categories: Photo, Web, Mobile, Video Templates</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center;">
+        <a href="Session 1 -  Graphic Design (2).pdf" download>📥 Download Session 1</a> |
+        <a href="Session 2 -  Graphic Design Bootcamp.pdf" download>📥 Session 2</a> |
+        <a href="Session 3 -  Graphic Design Bootcamp.pdf" download>📥 Session 3</a>
+    </div>
+</section>
+<section id="networking">
+    <h2>Casharka 1: Networking Basics</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Waa Maxay Network?</h3>
+            <p>Network waa xiriir u dhaxeeya qalabyo badan si ay xog isugu gudbiyaan.</p>
+        </div>
+        <div class="project">
+            <h3>Noocyada Network</h3>
+            <ul>
+                <li>LAN (Local Area Network)</li>
+                <li>WAN (Wide Area Network)</li>
+                <li>WLAN (Wireless LAN)</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Amarro Muhiim ah</h3>
+            <pre><code>
+ipconfig / ifconfig
+ping google.com
+traceroute google.com
+nslookup domain.com
+            </code></pre>
+        </div>
+    </div>
+</section>
+<section id="seo">
+    <h2>Casharka 2: SEO & Digital Marketing</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Waa Maxay SEO?</h3>
+            <p>SEO waa farsamo lagu kor u qaado muuqaalka website-ka si uu uga dhex muuqdo raadinta Google.</p>
+        </div>
+        <div class="project">
+            <h3>Qaybaha SEO</h3>
+            <ul>
+                <li>🔹 On-Page SEO: Keywords, Titles</li>
+                <li>🔹 Off-Page SEO: Backlinks</li>
+                <li>🔹 Technical SEO: Sitemap, robots.txt</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Digital Marketing</h3>
+            <p>Waxaa ka mid ah: Social Media, Ads, Email Marketing, iyo Content Marketing.</p>
+        </div>
+    </div>
+</section>
+<section id="web-development">
+    <h2>Casharka 3: Web Development</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Waa Maxay Web Development?</h3>
+            <p>Web Development waa sameynta website iyo apps online ah.</p>
+        </div>
+        <div class="project">
+            <h3>Frontend vs Backend</h3>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: PHP, Python, Node.js</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Code Tusaale ah</h3>
+            <pre><code>
+&lt;button onclick="alert('Hello Bobsi!')"&gt;Guji Halkaan&lt;/button&gt;
+            </code></pre>
+        </div>
+    </div>
+</section>
+<section id="programming">
+    <h2>Casharka 4: Programming</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Waa Maxay Programming?</h3>
+            <p>Programming waa hab kombuyuutarka loogu sheego inuu shaqo sameeyo.</p>
+        </div>
+        <div class="project">
+            <h3>Luqadaha Caanka ah</h3>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>C++ / C#</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Code Tusaale</h3>
+            <pre><code>
+Python:
+name = input("Magacaaga?")
+print("Ku soo dhawoow " + name)
+
+JavaScript:
+&lt;button onclick="greet()"&gt;Guji Halkaan&lt;/button&gt;
+&lt;script&gt;
+function greet() {
+  let name = prompt("Magacaaga?");
+  alert("Ku soo dhawoow, " + name + "!");
+}
+&lt;/script&gt;
+            </code></pre>
+        </div>
+    </div>
+</section>
+<section id="project-management">
+    <h2>Casharka 5: Project Management</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Waa Maxay Project Management?</h3>
+            <p>Waa qorsheynta iyo kormeerka mashruuc si uu guul ugu dhammaado waqtigiisa iyo miisaaniyadiisa.</p>
+        </div>
+        <div class="project">
+            <h3>Lifecycle-ka Mashruuca</h3>
+            <ol>
+                <li>Initiation</li>
+                <li>Planning</li>
+                <li>Execution</li>
+                <li>Monitoring</li>
+                <li>Closing</li>
+            </ol>
+        </div>
+        <div class="project">
+            <h3>Qalabyo La Adeegsado</h3>
+            <p>Tools: Trello, Asana, Notion, ClickUp</p>
+            <iframe src="https://trello.com/b/sample_board.html" width="100%" height="300" style="border:none;"></iframe>
+        </div>
+    </div>
+</section>
+<section id="testimonials">
+  <h2>Markhaatifurka Macaamiisha</h2>
+  <div class="projects">
+    <div class="project">
+      <strong>-Maxamed.</strong>
+      <p>"Muscab wuxuu ii sameeyay logo cajiib ah – aad baan ugu faraxsanahay!"</p>
+      
+    </div>
+    <div class="project">
+      <strong>-C/laahi</strong>
+      <p>"Website-kaan wuxuu iga caawiyay inaan helay shaqo – Mahadsanid Muscab!"</p>
+      
+    </div>
+  </div>
+</section>
+<section id="map" style="padding: 20px; text-align: center;">
+  <h2>Goobta Aan Ku Suganahay</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798884033!2d-74.25987568774464!3d40.697670063304104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQyJzU0LjYiTiA3NMKwMTUnMDIuMyJX!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" 
+    width="100%" 
+    height="450" 
+    style="border:0; border-radius: 10px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+<section style="text-align:center; margin-top: 40px;">
+  <h3>Qabsashada Kulanka</h3>
+  <p>Fadlan ka dooro taariikhda & waqtiga</p>
+  <iframe 
+    src="https://calendar.google.com/calendar/embed?src=youremail%40gmail.com&ctz=Africa%2FMogadishu" 
+    style="border: 0; width: 100%; height: 600px;" 
+    frameborder="0" 
+    scrolling="no">
+  </iframe>
+</section>
+
+
+
+    <section id="projects">
+        <h2>Mashaariicda aan sameeyay</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Mashruuca 1: Website Shaqsiyan</h3>
+                <p>Mashruucan wuxuu ahaa abuurista website shaqsi ah oo muujinaya xirfadaha iyo mashaariicda aan qabtay.</p>
+                <img src="project-image1.jpg" alt="Mashruuca 1" class="project-image">
+                <p><strong>Agabka:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Natiijo:</strong> Waxaa si fudud ula socon kara dadka doonaya iney la xiriiraan ama shaqo ii soo bandhigaan.</p>
+            </div>
+
+            <div class="project">
+                <h3>Mashruuca 2: App Mobile Iskuul</h3>
+                <p>Mashruucan wuxuu ahaa abuurista app Android ah oo iskuulka loogu talagalay ardayda iyo macalimiinta.</p>
+                <img src="project-image2.jpg" alt="Mashruuca 2" class="project-image">
+                <p><strong>Agabka:</strong> Android Studio, Java, Firebase</p>
+                <p><strong>Natiijo:</strong> Wuxuu fududeeyay jadwalka iyo isgaarsiinta iskuulka, iyadoo ardaydu helaan warbixin sax ah waqtigeeda.</p>
+            </div>
+
+            <div class="project">
+                <h3>Mashruuca 3: Naqshad Brand Identity</h3>
+                <p>Waxaan naqshadeeyay astaamo, boorar, iyo templates loogu talagalay shirkad cusub oo ku taalla Muqdisho.</p>
+                <img src="project-image3.jpg" alt="Mashruuca 3" class="project-image">
+                <p><strong>Agabka:</strong> Adobe Illustrator, Photoshop</p>
+                <p><strong>Natiijo:</strong> Shirkaddu waxay heshay muuqaal sumadeed oo xasuus leh oo kordhiyay kalsoonida macaamiisha.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans">
+        <h2>Qorshayaasha Adeegga</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>🟢 Free</h3>
+                <p>Hel adeegyo bilaash ah si aad u tijaabiso xirfadayda.</p>
+                <ul>
+                    <li>✔️ Naqshad kooban</li>
+                    <li>✔️ 1 mashruuc</li>
+                    <li>✔️ Email Support</li>
+                </ul>
+                <button class="plan-button free">Isdiiwaangeli Bilaash</button>
+            </div>
+
+            <div class="project">
+                <h3>⭐ Trial</h3>
+                <p>Ku tijaabi adeegyada premium si bilaash ah 7 maalmood.</p>
+                <ul>
+                    <li>✔️ 2 mashruuc</li>
+                    <li>✔️ Naqshad gaar ah</li>
+                    <li>✔️ La-talin kooban</li>
+                </ul>
+                <button class="plan-button trial">Bilow Tijaabo</button>
+            </div>
+
+            <div class="project">
+                <h3>👑 Premium</h3>
+                <p>Hel adeeg dhamaystiran iyo taageero buuxda.</p>
+                <ul>
+                    <li>✔️ Mashruucyo aan xadidnayn</li>
+                    <li>✔️ Naqshad gaar ah & SEO</li>
+                    <li>✔️ Taageero 24/7</li>
+                </ul>
+                <a href="https://wa.me/252617742509?text=Salaan%20Muscab,%20waxaan%20xiiseynayaa%20adeegga%20Premium" target="_blank">
+                    <button class="plan-button premium">Dalbo Premium via WhatsApp</button>
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="files/qorshayaasha-adeegyada.pdf" download>
+                <button class="plan-button trial">Soo Degso Qorshayaasha (PDF)</button>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Igala Soo Xiriir</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Magacaaga" required>
+            <input type="email" name="email" placeholder="Email-kaaga" required>
+            <textarea name="message" placeholder="Fariintaada" rows="4" required></textarea>
+            <button type="submit">U dir Fariinta</button>
+        </form>
+        <section id="subscribe" style="padding: 40px; background: #f5f5f5;">
+  <h2>Kuso Biir whats app</h2>
+  <p>Hel wararkayga ugu dambeeya iyo casharroyin</p>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 400px; margin-top: 20px;">
+    <input type="email" name="email" placeholder="Geli Email-kaaga" required style="padding: 10px; width: 100%; margin-bottom: 10px;">
+    <button type="submit" style="padding: 10px 20px; background: #00c6ff; color: white; border: none;">Subscribe</button>
+  </form>
+<form ... onsubmit="alert('Mahadsanid! Waxaan helnay email-kaaga.');">
+</form>
+</section>
+
+
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:mkaraama820@gmail.com">mkaraama820@gmail.com</a></p>
+            <p><strong>Taleefan:</strong> 0617742509</p>
+        </div>
+
+        <div class="social-links">
+            <h3>La Xiriir Baraha Bulshada</h3>
+            <a href="https://www.facebook.com/share/qrqDX4An9UhiA57x/?mibextid=qi2Omg" target="_blank" style="text-decoration:none;">
+  <button style="background-color: #1877F2; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+    👍 La wadaag Facebook
+  </button>
+</a>
+            
+            <a href="tel:+252617742509" style="text-decoration:none;">
+  <button style="background-color: #28a745; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+    📞 Wac Muscab: 0617742509
+  </button>
+</a>
+
+  <button style="background-color: #25D366; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+    💬 La Xiriir WhatsApp
+  </button>
+</a>
+
+            <a href="https://www.instagram.com/muscab_alvarez?igsh=eHF3aWVyYzVteGNh" target="_blank" style="text-decoration:none;">
+  <button style="background-color: #E1306C; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+    📷 Raac Instagram-ka: @muscab_alvarez
+  </button>
+</a>
+
+        </div>
+        <div style="text-align:center; margin-top: 20px;">
+  <h3>Goobtayda: Xafiiska Muscab Karaama</h3>
+  <p>KM4, Maka Al Mukarama Road, Mogadishu, Somalia</p>
+  <p><strong>Waqtiga Shaqada:</strong> Axad - Khamiis: 8am - 5pm</p>
+  <p><strong>Email:</strong> mkaraama820@gmail.com</p>
+  <p><strong>Telefoon:</strong> +252 61 7742509</p>
+</div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dhamaan wa ku mahadsantihin Boqoshada website-keyga.</p>
+    </footer>
+</body>
+</html>
